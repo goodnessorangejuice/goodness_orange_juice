@@ -1,0 +1,49 @@
+<div ng-controller="stockistFormController as stockist">
+    <form class="form-horizontal" role="form" name="myForm" novalidate>
+        <div class="form-group">
+            <label for="contact" class="col-sm-2 control-label">Contact name:</label>
+            <div class="col-sm-4">
+                <input type="text" name="contact" class="form-control" ng-required="true" ng-model="stockist.bio.name" placeholder="Contact name">
+                <span ng-class="{errorMessage:myForm.contact.$touched && myForm.contact.$error.required}" ng-show="myForm.contact.$touched && myForm.contact.$error.required">*Contact Name is Required</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-4">
+                <input type="text" name="email" ng-model="stockist.bio.email" class="form-control" ng-required="true" ng-model="stockist.bio.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" placeholder="Email">
+
+                <span ng-class="{errorMessage:myForm.email.$dirty && myForm.email.$invalid}" ng-show="myForm.email.$touched && myForm.email.$invalid">*Please enter a Valid Email Address</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="businessaddress" class="col-sm-2 control-label">Business Address:</label>
+            <div class="col-sm-4">
+                <input type="text" name="businessaddress" ng-model="stockist.bio.BusinessAddress" class="form-control" ng-required="true" ng-model="user.businessaddress" placeholder="Business Address">
+                <span ng-class="{errorMessage:myForm.businessaddress.$touched && myForm.businessaddress.$error.required}" ng-show="myForm.businessaddress.$touched && myForm.businessaddress.$error.required">*Please enter your Business Address</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phonenumber" class="col-sm-2 control-label">Phone No:</label>
+            <div class="col-sm-4">
+                <div class="input-group">
+                    <div class="input-group-addon">+234</div>
+                    <input type="text" name="phonenumber" ng-model="stockist.bio.phoneNumber" class="form-control" ng-required="true" ng-model="user.phonenumber" ng-maxlength="10" placeholder="Phone number">
+                </div>
+                <span ng-class="{errorMessage:myForm.phonenumber.$touched  && myForm.phonenumber.$error.required}" ng-show="myForm.phonenumber.$touched && myForm.phonenumber.$error.required">*Please enter your Phone Number</span>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="feedback" class="col-sm-2 control-label">Feed Back:</label>
+            <div class="col-sm-4">
+                <textarea type="text" name="feedback" rows="8" class="form-control" ng-model="stockist.bio.feedBack" ng-required="true"></textarea>
+                <span ng-class="{errorMessage:myForm.feedback.$touched && myForm.feedback.$error.required}" ng-show="myForm.feedback.$touched && myForm.feedback.$error.required">*Required</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2 col-sm-offset-2">
+                <button value="submit" name="stockistButton" id='stockistButton' class="btn btn-filled" ng-click='stockist.submit()'>Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

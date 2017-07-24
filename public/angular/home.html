@@ -1,0 +1,78 @@
+     <section id="Home" class="header-section-area" ng-controller="headerController as $ctrl">
+        <nav class="navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                    <!-- <a class="navbar-brand" href="#"><img src="img/logo_kegr.png" width="111px" height="20px" alt="Blog"></a> -->
+                    <h2 class="goodness"><a ui-sref="home">G<span id="colorGreen">oo</span>dness Orange Juice</a></h2>
+                    <span id="percentage">100% cold-Pressed!</span>
+                </div>
+                   <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1" >
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a ui-sref="home">Home</a></li>
+                         <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                         <li><a ui-sref="goodness_story">Goodness Story</a></li>
+                         <li><a ui-sref="goodness_promise">Goodness Promise</a></li>
+                         <li><a ui-sref="goodness_team">Goodness Team</a></li>
+                         <li><a ui-sref="kegr">KEGR</a></li>
+                        </ul>
+                    </li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                         <li><a ui-sref="goodness_orange_juice">Goodness Orange Juice</a></li>
+                         <li><a ui-sref="goodness_process">Goodness Process</a></li>
+                        </ul>
+                    </li>
+                        <li><a ui-sref="faq">FAQs</a></li>
+                        <li><a href="http://goodnessorangejuice.blogspot.com.ng">Blog</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                         <li><a ui-sref="how_to_order">How to Order</a></li>
+                         <li><a ui-sref="delivery_service">Delivery Service</a></li>
+                         <li><a ui-sref="stockist">Stockist</a></li>
+                         <li><a ui-sref="buy_on_line">Buy Online</a></li>
+                        </ul>
+                    </li>
+                     <li><a ui-sref="contact_us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="row owl-carousel owl-theme">
+            <div class="one-image">
+            <p id="first-owl"><span style="color:#8cc641;">Introducing Goodness Cold - pressed Orange Juice</span><br>Where healthy living starts</p>
+                <div class="single-image-blog">
+                <img src="images/blog1.jpg" alt="">
+                </div>
+            </div>
+            <div class="one-image">
+               <p id="second-owl"><span style="color:#8cc641;">Mom’s don’t worry…<br>Goodness got you covered.</span><br>Your kids can now get their daily recommended vitamin C intake<br> in the most delicious and easy way.</p>
+                <div class="single-image-blog">
+                    <img src="images/blog.jpg" alt="">
+                </div>
+                </div>
+                <div class="one-image">
+                    <p id="third-owl"><span>Bursting with farm fresh natural goodness</span></p>
+                <div class="single-image-blog">
+                    <img src="images/grassy.jpg" alt="">
+                </div>
+                </div>
+                <div class="one-image">
+                    <p id="fourth-owl">Packed with Vitamin C, Goodness will help kick-start your day</p>
+                <div class="single-image-blog">
+                    <img src="images/sport.jpg" alt="">
+                </div>
+                </div>
+            
+        </div>
+        </section>

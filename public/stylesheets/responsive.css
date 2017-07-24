@@ -1,0 +1,104 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .website-designers-area::before {
+        content: '';
+        background-image: url(images/plant.png);
+        width: 100%;
+        height: 100%;
+        left: 75px;
+        top: 80%;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 20px 6px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #fff;
+    }
+    .header-details>h1 {
+        font-size: 55px;
+        color: #fff;
+        font-weight: 900;
+        text-decoration: underline;
+        margin-bottom: 35px;
+    }
+    .website-designers-image {
+        margin-top: 140px;
+    }
+    .enter-your-email {
+        padding: 20px 30px;
+        border: 2px solid #dee3ed;
+        border-radius: 50px;
+        color: #bfcbe1;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: italic;
+        margin-top: 30px;
+    }
+    .support-us-area::before {
+        content: '';
+        background-image: url(images/cup.png);
+        width: 100%;
+        height: 100%;
+        left: -10px;
+        top: 80%;
+        position: absolute;
+        background-repeat: no-repeat;
+        display: none;
+    }
+    .website-designers-area::before {
+        display: none;
+    }
+    .support-us-area::after {
+        display: none;
+    }
+    .shopping-details {
+        margin-top: 140px;
+    }
+    .background-video {
+        width: 100%;
+        height: 100%;
+    }
+    .nav.navbar-nav {
+        float: right;
+        text-align: right;
+        background-color: #8cc641;
+        position:relative;
+        width: 50%;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .navbar-brand {
+        float: left;
+        height: 60px;
+        padding: 8px 15px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+<div ng-controller="mailingListController as mail">
+    <section id="Signin" class="support-us-area">
+        <div class="container">
+            <div class="row" ng-app>
+                <div class="col-xs-12 col-md-12">
+                    <div class="support-us-details wow fadeInUp">
+                        <h2>Join Our Mailing List</h2>
+                        <form novalidate>
+                            <input class="enter-your-email" type="email" name="email" ng-model="mail.email.address" placeholder="Enter your email" required>
+                            <button class="send" id="subscribe" ng-click="mail.emailAdd()">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
